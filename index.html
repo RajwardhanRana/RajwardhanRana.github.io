@@ -16,7 +16,7 @@
     <p>My course portfolio: learning to access, understand and display data.</p>
   </header>
   <main>
-    <h2>Week 1: My first two charts</h2>
+    <h2>Week 1: Comparing living standards</h2>
     <section>
       <h3>Chart 1: Comparing GDP per capita</h3>
       <p>A bar chart comparing six countries, using the values included in the lecture example. The supplied data do not specify a year or units, so these values should be treated as a teaching example.</p>
@@ -27,8 +27,14 @@
       <p>A line chart comparing country trends. Its chart specification loads a CSV hosted by the Economics Observatory course repository and identifies the World Bank as the source. The original chart title and units are retained from the supplied example.</p>
       <figure id="Location2" aria-label="GDP per capita line chart"></figure>
     </section>
+    <section>
+      <h3>Chart 3: GDP and life expectancy</h3>
+      <p>This scatter plot compares GDP per capita with life expectancy. Colour identifies continents and circle size represents population. Hover over a country to see its values. An association between income and life expectancy does not by itself establish causation.</p>
+      <p>Sources: World Bank and UN Population Prospects 2022, as identified in the course chart. <a href="https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json">View chart specification</a>.</p>
+      <figure id="Location3" aria-label="GDP and life expectancy scatter plot"></figure>
+    </section>
   </main>
-  <footer><p>Lecture 1 practical. Charts use the course's supplied Vega-Lite examples.</p></footer>
+  <footer><p>Lecture 1 and Seminar 1 practical. Charts use the course's supplied Vega-Lite examples.</p></footer>
   <script>
     // A figure's ID tells Vega Embed where to display each chart.
     function showChart(location, specification) {
@@ -41,6 +47,8 @@
     }
     showChart('#Location1', 'wk1_chart1.json');
     showChart('#Location2', 'wk1_chart2.json');
+    // A full raw URL embeds a chart specification from another repository.
+    showChart('#Location3', 'https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json');
   </script>
 </body>
 </html>
