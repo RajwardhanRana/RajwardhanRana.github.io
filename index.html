@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rajwardhan Rana | Data Visualisation Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vega@6.4.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.3"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@7.3.0"></script>
+</head>
+<body>
+  <header>
+    <h1 class="big">Rajwardhan Rana</h1>
+    <p>Data Visualisation for Policymaking | <a href="https://github.com/RajwardhanRana">GitHub</a></p>
+    <p>My course portfolio: learning to access, understand and display data.</p>
+  </header>
+  <main>
+    <h2>Week 1: My first two charts</h2>
+    <section>
+      <h3>Chart 1: Comparing GDP per capita</h3>
+      <p>A bar chart comparing six countries, using the values included in the lecture example. The supplied data do not specify a year or units, so these values should be treated as a teaching example.</p>
+      <figure id="Location1" aria-label="GDP per capita bar chart"></figure>
+    </section>
+    <section>
+      <h3>Chart 2: GDP per capita over time</h3>
+      <p>A line chart comparing country trends. Its chart specification loads a CSV hosted by the Economics Observatory course repository and identifies the World Bank as the source. The original chart title and units are retained from the supplied example.</p>
+      <figure id="Location2" aria-label="GDP per capita line chart"></figure>
+    </section>
+  </main>
+  <footer><p>Lecture 1 practical. Charts use the course's supplied Vega-Lite examples.</p></footer>
+  <script>
+    // A figure's ID tells Vega Embed where to display each chart.
+    function showChart(location, specification) {
+      vegaEmbed(location, specification).catch(function () {
+        const message = document.createElement('p');
+        message.className = 'chart-error';
+        message.textContent = 'The chart could not load. Check your internet connection and try again.';
+        document.querySelector(location).appendChild(message);
+      });
+    }
+    showChart('#Location1', 'wk1_chart1.json');
+    showChart('#Location2', 'wk1_chart2.json');
+  </script>
+</body>
+</html>
