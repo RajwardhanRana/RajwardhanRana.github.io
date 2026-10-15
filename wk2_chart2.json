@@ -1,0 +1,88 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "Adapted from the official Line Chart using a cleaned India inflation CSV. Annual dates are positioned at January 1 for plotting, not monthly observations.",
+  "title": {
+    "text": "India: inflation since 2000",
+    "subtitle": [
+      "Consumer prices, annual change (%), 2000-2025",
+      "Source: World Bank WDI / IMF IFS; FP.CPI.TOTL.ZG"
+    ]
+  },
+  "width": "container",
+  "height": 300,
+  "data": {
+    "url": "data/india_inflation.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": {
+    "type": "line",
+    "color": "#087f8c",
+    "strokeWidth": 3,
+    "point": {
+      "filled": true,
+      "size": 45
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "temporal",
+      "title": "Year",
+      "axis": {
+        "format": "%Y",
+        "tickCount": 6,
+        "grid": false,
+        "labelAngle": 0
+      }
+    },
+    "y": {
+      "field": "Inflation",
+      "type": "quantitative",
+      "title": "Annual inflation (%)",
+      "scale": {
+        "zero": true
+      },
+      "axis": {
+        "format": ".1f",
+        "tickCount": 6
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Year",
+        "type": "ordinal",
+        "title": "Year"
+      },
+      {
+        "field": "Inflation",
+        "type": "quantitative",
+        "title": "Annual inflation (%)",
+        "format": ".2f"
+      }
+    ]
+  },
+  "config": {
+    "background": "white",
+    "font": "Arial",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "titlePadding": 12,
+      "domainColor": "#b8c4cc",
+      "tickColor": "#b8c4cc",
+      "gridColor": "#e8edf0"
+    },
+    "title": {
+      "anchor": "start",
+      "fontSize": 18,
+      "subtitleFontSize": 11,
+      "subtitleColor": "#53616b",
+      "offset": 18
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "Adapted from the official Simple Bar Chart: swapped axes, India data, new title, teal bars and larger labels.",
+  "title": {
+    "text": "India: recent consumer-price inflation",
+    "subtitle": [
+      "Annual change (%), 2020-2025",
+      "Source: World Bank WDI / IMF IFS; FP.CPI.TOTL.ZG"
+    ]
+  },
+  "width": "container",
+  "height": 260,
+  "data": {
+    "url": "data/india_inflation.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.Year >= 2020"
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "color": "#087f8c",
+    "cornerRadiusEnd": 3
+  },
+  "encoding": {
+    "x": {
+      "field": "Inflation",
+      "type": "quantitative",
+      "title": "Annual inflation (%)",
+      "scale": {
+        "zero": true
+      },
+      "axis": {
+        "format": ".1f"
+      }
+    },
+    "y": {
+      "field": "Year",
+      "type": "ordinal",
+      "sort": "ascending",
+      "title": null,
+      "axis": {
+        "labelFontSize": 13,
+        "grid": false
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Year",
+        "type": "ordinal",
+        "title": "Year"
+      },
+      {
+        "field": "Inflation",
+        "type": "quantitative",
+        "title": "Annual inflation (%)",
+        "format": ".2f"
+      }
+    ]
+  },
+  "config": {
+    "background": "white",
+    "font": "Arial",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "titlePadding": 12,
+      "domainColor": "#b8c4cc",
+      "tickColor": "#b8c4cc",
+      "gridColor": "#e8edf0"
+    },
+    "title": {
+      "anchor": "start",
+      "fontSize": 18,
+      "subtitleFontSize": 11,
+      "subtitleColor": "#53616b",
+      "offset": 18
+    }
+  }
+}

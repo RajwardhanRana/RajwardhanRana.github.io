@@ -33,8 +33,30 @@
       <p>Sources: World Bank and UN Population Prospects 2022, as identified in the course chart. <a href="https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json">View chart specification</a>.</p>
       <figure id="Location3" aria-label="GDP and life expectancy scatter plot"></figure>
     </section>
+    <section id="week2" aria-labelledby="week2-title">
+      <h2 id="week2-title">Week 2: Designing charts with India data</h2>
+      <p>Two views of consumer-price inflation: comparing recent years and following the longer trend.</p>
+      <section>
+        <h3>Chart 4: Comparing recent years</h3>
+        <p>Horizontal bars compare India's annual inflation in 2020-2025. The zero baseline keeps bar lengths proportional to the values.</p>
+        <figure id="Location4" class="responsive-chart" aria-label="Horizontal bars comparing India's annual inflation"></figure>
+      </section>
+      <section>
+        <h3>Chart 5: The longer trend</h3>
+        <p>This chart follows India's annual consumer-price inflation from 2000 to 2025. A lower positive rate means prices are rising more slowly; it does not mean prices are falling.</p>
+        <figure id="Location5" class="responsive-chart" aria-label="Line chart of annual inflation in India since 2000"></figure>
+      </section>
+      <p class="source-note">Source: <a href="https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=IN">World Bank WDI, based on IMF International Financial Statistics</a>. Annual percentage changes, not a price-index level. Snapshot downloaded 15 October 2026. This chart does not refresh automatically. <a href="data/india_inflation.csv">Download cleaned CSV</a>.</p>
+      <details>
+        <summary>Seminar 2: chart adaptations and data preparation</summary>
+        <p>The bar chart adapts the <a href="https://vega.github.io/vega-lite/examples/bar.html">official simple bar example</a>: changed title, teal colour, larger axis labels and swapped axes. Its example values are replaced with India inflation data.</p>
+        <p>The time series adapts the <a href="https://vega.github.io/vega-lite/examples/line.html">official line example</a>. Changes include title and source subtitle, colour, line thickness, point markers, axis titles, label sizes, year formatting, lighter gridlines, tooltips and responsive width.</p>
+        <p>The source response was filtered to India observations from 2000 onward, sorted by year and exported as a comma-delimited CSV with Date, Year and Inflation columns. Dates use yyyy-mm-dd; January 1 represents each annual observation for plotting. Values remain in percentage units. Data preparation was performed with Python; the Excel cleaning exercise remains available to practise separately.</p>
+        <p>Chart specifications: <a href="wk2_chart1.json">bar chart JSON</a> and <a href="wk2_chart2.json">line chart JSON</a>.</p>
+      </details>
+    </section>
   </main>
-  <footer><p>Lecture 1 and Seminar 1 practical. Charts use the course's supplied Vega-Lite examples.</p></footer>
+  <footer><p>Data Visualisation for Policymaking portfolio</p></footer>
   <script>
     // A figure's ID tells Vega Embed where to display each chart.
     function showChart(location, specification) {
@@ -49,6 +71,8 @@
     showChart('#Location2', 'wk1_chart2.json');
     // A full raw URL embeds a chart specification from another repository.
     showChart('#Location3', 'https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json');
+    showChart('#Location4', 'wk2_chart1.json');
+    showChart('#Location5', 'wk2_chart2.json');
   </script>
 </body>
 </html>

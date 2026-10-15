@@ -71,3 +71,11 @@ body { padding: 32px 20px; box-sizing: border-box; }
 figure { margin: 0; overflow-x: auto; }
 footer { border-top: 1px solid #ddd; padding-top: 16px; }
 .chart-error { color: #a12020; }
+
+/* Seminar 2: give container-width charts an explicit frame. */
+.responsive-chart { width: 100%; min-width: 0; }
+.responsive-chart .vega-embed { display: block; width: 100%; }
+.source-note { font-size: 0.875rem; color: #53616b; }
+#week2 { border-top: 1px solid #ddd; padding-top: 12px; }
+details { margin: 20px 0; }
+summary { cursor: pointer; font-weight: 600; }
