@@ -79,3 +79,6 @@ footer { border-top: 1px solid #ddd; padding-top: 16px; }
 #week2 { border-top: 1px solid #ddd; padding-top: 12px; }
 details { margin: 20px 0; }
 summary { cursor: pointer; font-weight: 600; }
+
+/* Week 3 continues the portfolio section spacing. */
+#week3 { border-top: 1px solid #ddd; padding-top: 12px; }

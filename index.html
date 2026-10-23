@@ -55,6 +55,22 @@
         <p>Chart specifications: <a href="wk2_chart1.json">bar chart JSON</a> and <a href="wk2_chart2.json">line chart JSON</a>.</p>
       </details>
     </section>
+    <section id="week3" aria-labelledby="week3-title">
+      <h2 id="week3-title">Week 3: Python, Altair and stock-market valuation</h2>
+      <p>Can a price-to-earnings ratio tell us whether US stocks are expensive? This chart uses Python to clean Robert Shiller's monthly data and Altair to generate the visualisation.</p>
+      <h3>Chart 6: US stock prices relative to earnings</h3>
+      <figure id="Location6" class="responsive-chart" aria-label="US monthly price-to-earnings ratio with historical sample average"></figure>
+      <p>The dashed line is the mean of the 1,866 valid monthly P/E ratios from January 1871 to June 2026: <strong>16.22 times</strong>. The latest usable observation in this teaching snapshot is <strong>25.22 times (June 2026)</strong>.</p>
+      <p>The largest observed ratio is 123.73 in May 2009. During the financial crisis, earnings collapsed towards zero, pushing up P/E even as prices fell. A high ratio alone does not establish that stocks are overvalued. This is ordinary P/E, not the cyclically adjusted P/E (CAPE).</p>
+      <p class="source-note">Source: <a href="https://shillerdata.com/">Robert Shiller</a>, using the <a href="https://github.com/jhellingsdata/LSE-PP434/tree/main/weeks/week03">Class 3 course handout</a>. Snapshot prepared 23 October 2026; it is not live market data. The last four rows lack usable earnings and are excluded.</p>
+      <p><a href="https://colab.research.google.com/github/RajwardhanRana/RajwardhanRana.github.io/blob/main/notebooks/Class3_Shiller_Altair.ipynb">Open the worked notebook in Colab</a> | <a href="notebooks/Class3_Shiller_Altair.ipynb">Download notebook</a> | <a href="wk3_pe_ratio_chart.json">Chart JSON</a> | <a href="data/data_shiller_pe.csv">P/E CSV</a></p>
+      <details>
+        <summary>Class 3: data preparation and chart styling</summary>
+        <p>The notebook uses requests to fetch the CSV, reads Date as text, calculates P/E = P / E, removes missing or non-finite ratios, checks duplicate months and exports ISO dates. The original fields are preserved in the <a href="data/data_shiller_clean.csv">full cleaned CSV</a>. October dates are checked explicitly.</p>
+        <p>Altair builds the line chart and layers a dashed average rule. Customisations include teal colour, a thicker line, descriptive title, responsive width, larger axis labels, units and hover tooltips. The exported JSON links to the cleaned CSV.</p>
+        <p>Based on DS3_2 and DS3_3 from the teaching team. <a href="scripts/build_week3.py">Reproduction script</a>. The Colab notebook is a worked example: save your own Drive copy and practise the cells yourself.</p>
+      </details>
+    </section>
   </main>
   <footer><p>Data Visualisation for Policymaking portfolio</p></footer>
   <script>
@@ -73,6 +89,7 @@
     showChart('#Location3', 'https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json');
     showChart('#Location4', 'wk2_chart1.json');
     showChart('#Location5', 'wk2_chart2.json');
+    showChart('#Location6', 'wk3_pe_ratio_chart.json');
   </script>
 </body>
 </html>
