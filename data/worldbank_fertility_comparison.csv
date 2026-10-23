@@ -1,0 +1,261 @@
+countryiso3code,country.value,date,value
+GBR,United Kingdom,1960-01-01,2.69
+GBR,United Kingdom,1961-01-01,2.78
+GBR,United Kingdom,1962-01-01,2.86
+GBR,United Kingdom,1963-01-01,2.88
+GBR,United Kingdom,1964-01-01,2.93
+GBR,United Kingdom,1965-01-01,2.86
+GBR,United Kingdom,1966-01-01,2.78
+GBR,United Kingdom,1967-01-01,2.68
+GBR,United Kingdom,1968-01-01,2.6
+GBR,United Kingdom,1969-01-01,2.51
+GBR,United Kingdom,1970-01-01,2.44
+GBR,United Kingdom,1971-01-01,2.41
+GBR,United Kingdom,1972-01-01,2.2
+GBR,United Kingdom,1973-01-01,2.04
+GBR,United Kingdom,1974-01-01,1.92
+GBR,United Kingdom,1975-01-01,1.81
+GBR,United Kingdom,1976-01-01,1.74
+GBR,United Kingdom,1977-01-01,1.69
+GBR,United Kingdom,1978-01-01,1.75
+GBR,United Kingdom,1979-01-01,1.86
+GBR,United Kingdom,1980-01-01,1.9
+GBR,United Kingdom,1981-01-01,1.82
+GBR,United Kingdom,1982-01-01,1.78
+GBR,United Kingdom,1983-01-01,1.77
+GBR,United Kingdom,1984-01-01,1.77
+GBR,United Kingdom,1985-01-01,1.79
+GBR,United Kingdom,1986-01-01,1.78
+GBR,United Kingdom,1987-01-01,1.81
+GBR,United Kingdom,1988-01-01,1.82
+GBR,United Kingdom,1989-01-01,1.79
+GBR,United Kingdom,1990-01-01,1.83
+GBR,United Kingdom,1991-01-01,1.82
+GBR,United Kingdom,1992-01-01,1.79
+GBR,United Kingdom,1993-01-01,1.76
+GBR,United Kingdom,1994-01-01,1.74
+GBR,United Kingdom,1995-01-01,1.71
+GBR,United Kingdom,1996-01-01,1.73
+GBR,United Kingdom,1997-01-01,1.72
+GBR,United Kingdom,1998-01-01,1.71
+GBR,United Kingdom,1999-01-01,1.68
+GBR,United Kingdom,2000-01-01,1.64
+GBR,United Kingdom,2001-01-01,1.63
+GBR,United Kingdom,2002-01-01,1.63
+GBR,United Kingdom,2003-01-01,1.7
+GBR,United Kingdom,2004-01-01,1.75
+GBR,United Kingdom,2005-01-01,1.76
+GBR,United Kingdom,2006-01-01,1.82
+GBR,United Kingdom,2007-01-01,1.86
+GBR,United Kingdom,2008-01-01,1.91
+GBR,United Kingdom,2009-01-01,1.89
+GBR,United Kingdom,2010-01-01,1.92
+GBR,United Kingdom,2011-01-01,1.91
+GBR,United Kingdom,2012-01-01,1.92
+GBR,United Kingdom,2013-01-01,1.83
+GBR,United Kingdom,2014-01-01,1.81
+GBR,United Kingdom,2015-01-01,1.8
+GBR,United Kingdom,2016-01-01,1.79
+GBR,United Kingdom,2017-01-01,1.74
+GBR,United Kingdom,2018-01-01,1.68
+GBR,United Kingdom,2019-01-01,1.632
+GBR,United Kingdom,2020-01-01,1.571
+GBR,United Kingdom,2021-01-01,1.583
+GBR,United Kingdom,2022-01-01,1.56
+GBR,United Kingdom,2023-01-01,1.56
+GBR,United Kingdom,2024-01-01,1.551
+IND,India,1960-01-01,5.921
+IND,India,1961-01-01,5.937
+IND,India,1962-01-01,5.953
+IND,India,1963-01-01,5.969
+IND,India,1964-01-01,5.979
+IND,India,1965-01-01,5.941
+IND,India,1966-01-01,5.881
+IND,India,1967-01-01,5.825
+IND,India,1968-01-01,5.76
+IND,India,1969-01-01,5.684
+IND,India,1970-01-01,5.624
+IND,India,1971-01-01,5.565
+IND,India,1972-01-01,5.482
+IND,India,1973-01-01,5.402
+IND,India,1974-01-01,5.325
+IND,India,1975-01-01,5.195
+IND,India,1976-01-01,5.13
+IND,India,1977-01-01,5.007
+IND,India,1978-01-01,4.888
+IND,India,1979-01-01,4.808
+IND,India,1980-01-01,4.775
+IND,India,1981-01-01,4.698
+IND,India,1982-01-01,4.62
+IND,India,1983-01-01,4.565
+IND,India,1984-01-01,4.516
+IND,India,1985-01-01,4.432
+IND,India,1986-01-01,4.399
+IND,India,1987-01-01,4.311
+IND,India,1988-01-01,4.222
+IND,India,1989-01-01,4.132
+IND,India,1990-01-01,4.045
+IND,India,1991-01-01,3.959
+IND,India,1992-01-01,3.877
+IND,India,1993-01-01,3.799
+IND,India,1994-01-01,3.723
+IND,India,1995-01-01,3.651
+IND,India,1996-01-01,3.582
+IND,India,1997-01-01,3.514
+IND,India,1998-01-01,3.446
+IND,India,1999-01-01,3.383
+IND,India,2000-01-01,3.35
+IND,India,2001-01-01,3.303
+IND,India,2002-01-01,3.217
+IND,India,2003-01-01,3.122
+IND,India,2004-01-01,3.046
+IND,India,2005-01-01,2.958
+IND,India,2006-01-01,2.867
+IND,India,2007-01-01,2.775
+IND,India,2008-01-01,2.711
+IND,India,2009-01-01,2.674
+IND,India,2010-01-01,2.598
+IND,India,2011-01-01,2.532
+IND,India,2012-01-01,2.47
+IND,India,2013-01-01,2.399
+IND,India,2014-01-01,2.293
+IND,India,2015-01-01,2.289
+IND,India,2016-01-01,2.284
+IND,India,2017-01-01,2.193
+IND,India,2018-01-01,2.184
+IND,India,2019-01-01,2.12
+IND,India,2020-01-01,2.047
+IND,India,2021-01-01,2.014
+IND,India,2022-01-01,1.994
+IND,India,2023-01-01,1.975
+IND,India,2024-01-01,1.962
+JPN,Japan,1960-01-01,2.0
+JPN,Japan,1961-01-01,1.96
+JPN,Japan,1962-01-01,1.98
+JPN,Japan,1963-01-01,2.0
+JPN,Japan,1964-01-01,2.05
+JPN,Japan,1965-01-01,2.14
+JPN,Japan,1966-01-01,1.58
+JPN,Japan,1967-01-01,2.23
+JPN,Japan,1968-01-01,2.13
+JPN,Japan,1969-01-01,2.13
+JPN,Japan,1970-01-01,2.13
+JPN,Japan,1971-01-01,2.16
+JPN,Japan,1972-01-01,2.14
+JPN,Japan,1973-01-01,2.14
+JPN,Japan,1974-01-01,2.05
+JPN,Japan,1975-01-01,1.91
+JPN,Japan,1976-01-01,1.85
+JPN,Japan,1977-01-01,1.8
+JPN,Japan,1978-01-01,1.79
+JPN,Japan,1979-01-01,1.77
+JPN,Japan,1980-01-01,1.75
+JPN,Japan,1981-01-01,1.74
+JPN,Japan,1982-01-01,1.77
+JPN,Japan,1983-01-01,1.8
+JPN,Japan,1984-01-01,1.81
+JPN,Japan,1985-01-01,1.76
+JPN,Japan,1986-01-01,1.72
+JPN,Japan,1987-01-01,1.69
+JPN,Japan,1988-01-01,1.66
+JPN,Japan,1989-01-01,1.57
+JPN,Japan,1990-01-01,1.54
+JPN,Japan,1991-01-01,1.53
+JPN,Japan,1992-01-01,1.5
+JPN,Japan,1993-01-01,1.46
+JPN,Japan,1994-01-01,1.5
+JPN,Japan,1995-01-01,1.42
+JPN,Japan,1996-01-01,1.43
+JPN,Japan,1997-01-01,1.39
+JPN,Japan,1998-01-01,1.38
+JPN,Japan,1999-01-01,1.34
+JPN,Japan,2000-01-01,1.36
+JPN,Japan,2001-01-01,1.33
+JPN,Japan,2002-01-01,1.32
+JPN,Japan,2003-01-01,1.29
+JPN,Japan,2004-01-01,1.29
+JPN,Japan,2005-01-01,1.26
+JPN,Japan,2006-01-01,1.32
+JPN,Japan,2007-01-01,1.34
+JPN,Japan,2008-01-01,1.37
+JPN,Japan,2009-01-01,1.37
+JPN,Japan,2010-01-01,1.39
+JPN,Japan,2011-01-01,1.39
+JPN,Japan,2012-01-01,1.41
+JPN,Japan,2013-01-01,1.43
+JPN,Japan,2014-01-01,1.42
+JPN,Japan,2015-01-01,1.45
+JPN,Japan,2016-01-01,1.44
+JPN,Japan,2017-01-01,1.43
+JPN,Japan,2018-01-01,1.42
+JPN,Japan,2019-01-01,1.36
+JPN,Japan,2020-01-01,1.33
+JPN,Japan,2021-01-01,1.3
+JPN,Japan,2022-01-01,1.26
+JPN,Japan,2023-01-01,1.2
+JPN,Japan,2024-01-01,1.15
+KOR,"Korea, Rep.",1960-01-01,5.994
+KOR,"Korea, Rep.",1961-01-01,5.803
+KOR,"Korea, Rep.",1962-01-01,5.562
+KOR,"Korea, Rep.",1963-01-01,5.334
+KOR,"Korea, Rep.",1964-01-01,5.068
+KOR,"Korea, Rep.",1965-01-01,4.887
+KOR,"Korea, Rep.",1966-01-01,4.782
+KOR,"Korea, Rep.",1967-01-01,4.615
+KOR,"Korea, Rep.",1968-01-01,4.51
+KOR,"Korea, Rep.",1969-01-01,4.447
+KOR,"Korea, Rep.",1970-01-01,4.53
+KOR,"Korea, Rep.",1971-01-01,4.54
+KOR,"Korea, Rep.",1972-01-01,4.12
+KOR,"Korea, Rep.",1973-01-01,4.07
+KOR,"Korea, Rep.",1974-01-01,3.77
+KOR,"Korea, Rep.",1975-01-01,3.43
+KOR,"Korea, Rep.",1976-01-01,3.0
+KOR,"Korea, Rep.",1977-01-01,2.99
+KOR,"Korea, Rep.",1978-01-01,2.64
+KOR,"Korea, Rep.",1979-01-01,2.9
+KOR,"Korea, Rep.",1980-01-01,2.82
+KOR,"Korea, Rep.",1981-01-01,2.57
+KOR,"Korea, Rep.",1982-01-01,2.39
+KOR,"Korea, Rep.",1983-01-01,2.06
+KOR,"Korea, Rep.",1984-01-01,1.74
+KOR,"Korea, Rep.",1985-01-01,1.66
+KOR,"Korea, Rep.",1986-01-01,1.58
+KOR,"Korea, Rep.",1987-01-01,1.53
+KOR,"Korea, Rep.",1988-01-01,1.55
+KOR,"Korea, Rep.",1989-01-01,1.56
+KOR,"Korea, Rep.",1990-01-01,1.57
+KOR,"Korea, Rep.",1991-01-01,1.71
+KOR,"Korea, Rep.",1992-01-01,1.76
+KOR,"Korea, Rep.",1993-01-01,1.654
+KOR,"Korea, Rep.",1994-01-01,1.656
+KOR,"Korea, Rep.",1995-01-01,1.634
+KOR,"Korea, Rep.",1996-01-01,1.574
+KOR,"Korea, Rep.",1997-01-01,1.537
+KOR,"Korea, Rep.",1998-01-01,1.464
+KOR,"Korea, Rep.",1999-01-01,1.425
+KOR,"Korea, Rep.",2000-01-01,1.48
+KOR,"Korea, Rep.",2001-01-01,1.309
+KOR,"Korea, Rep.",2002-01-01,1.178
+KOR,"Korea, Rep.",2003-01-01,1.191
+KOR,"Korea, Rep.",2004-01-01,1.164
+KOR,"Korea, Rep.",2005-01-01,1.085
+KOR,"Korea, Rep.",2006-01-01,1.132
+KOR,"Korea, Rep.",2007-01-01,1.259
+KOR,"Korea, Rep.",2008-01-01,1.192
+KOR,"Korea, Rep.",2009-01-01,1.149
+KOR,"Korea, Rep.",2010-01-01,1.226
+KOR,"Korea, Rep.",2011-01-01,1.244
+KOR,"Korea, Rep.",2012-01-01,1.297
+KOR,"Korea, Rep.",2013-01-01,1.187
+KOR,"Korea, Rep.",2014-01-01,1.205
+KOR,"Korea, Rep.",2015-01-01,1.239
+KOR,"Korea, Rep.",2016-01-01,1.172
+KOR,"Korea, Rep.",2017-01-01,1.052
+KOR,"Korea, Rep.",2018-01-01,0.977
+KOR,"Korea, Rep.",2019-01-01,0.918
+KOR,"Korea, Rep.",2020-01-01,0.837
+KOR,"Korea, Rep.",2021-01-01,0.808
+KOR,"Korea, Rep.",2022-01-01,0.778
+KOR,"Korea, Rep.",2023-01-01,0.721
+KOR,"Korea, Rep.",2024-01-01,0.748

@@ -71,6 +71,22 @@
         <p>Based on DS3_2 and DS3_3 from the teaching team. <a href="scripts/build_week3.py">Reproduction script</a>. The Colab notebook is a worked example: save your own Drive copy and practise the cells yourself.</p>
       </details>
     </section>
+    <section id="week4" aria-labelledby="week4-title">
+      <h2 id="week4-title">Week 4: A live chart with the World Bank API</h2>
+      <p>Unlike the saved CSVs above, this chart requests data directly from the World Bank when the page loads. South Korea is the seminar example. Choose India, Japan, the United Kingdom or compare all four.</p>
+      <h3>Chart 7: Exploring total fertility rates</h3>
+      <figure id="Location7" class="responsive-chart" aria-label="Live World Bank fertility chart with a country selector"></figure>
+      <p>Total fertility rate is measured in births per woman. It summarises current age-specific fertility rates, rather than predicting an individual woman's completed family size. Use the selector below the chart to compare countries.</p>
+      <p class="source-note">Source: <a href="https://data.worldbank.org/indicator/SP.DYN.TFRT.IN">World Bank WDI: SP.DYN.TFRT.IN</a>, drawing on UN World Population Prospects, national statistical offices and Eurostat. Annual observations; coverage and historical estimates may be revised. The chart requests the latest available response on page load, subject to API availability and caching. It does not update continuously while the page stays open.</p>
+      <p><a href="https://api.worldbank.org/v2/country/kor;ind;jpn;gbr/indicator/SP.DYN.TFRT.IN?format=json&amp;per_page=1000">Inspect the live API response</a> | <a href="wk4_worldbank_live.json">Chart JSON</a> | <a href="https://colab.research.google.com/github/RajwardhanRana/RajwardhanRana.github.io/blob/main/notebooks/Class4_WorldBank_API.ipynb">Open the worked notebook in Colab</a></p>
+      <details>
+        <summary>Class 4: how the API chart works</summary>
+        <p>The URL combines a base endpoint, four country codes and the indicator code. The options request JSON and up to 1,000 observations, enough for the current four annual series. No API key is needed.</p>
+        <p>The response is [metadata, observations]. The chart uses <code>"format": {"type": "json", "property": "[1]"}</code> to select the observations. It removes null values rather than converting them to zero, parses years in UTC and filters the selected country.</p>
+        <p>The notebook uses requests, pandas.json_normalize and Altair to inspect and chart the same data. It checks pagination and duplicate country-year pairs, exports a <a href="data/worldbank_fertility_comparison.csv">cleaned snapshot CSV</a> and tries India's life-expectancy series. These downloadable CSVs are snapshots from 23 October 2026; the displayed chart reads the live API instead.</p>
+        <p><a href="notebooks/Class4_WorldBank_API.ipynb">Download notebook</a> | <a href="scripts/build_week4.py">Reproduction script</a> | <a href="data/README-worldbank-week4.md">Source and preparation notes</a></p>
+      </details>
+    </section>
   </main>
   <footer><p>Data Visualisation for Policymaking portfolio</p></footer>
   <script>
@@ -90,6 +106,7 @@
     showChart('#Location4', 'wk2_chart1.json');
     showChart('#Location5', 'wk2_chart2.json');
     showChart('#Location6', 'wk3_pe_ratio_chart.json');
+    showChart('#Location7', 'wk4_worldbank_live.json');
   </script>
 </body>
 </html>

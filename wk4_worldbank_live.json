@@ -1,0 +1,148 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "Class 4: a live World Bank API chart. Reads the second JSON array, removes null observations and uses UTC dates. No API key or CSV is used for this chart.",
+  "width": "container",
+  "height": 310,
+  "title": {
+    "text": "Fertility rates from the World Bank API",
+    "subtitle": [
+      "Annual total fertility rate, births per woman",
+      "South Korea is the class example; use the selector to explore"
+    ],
+    "anchor": "start",
+    "fontSize": 18,
+    "subtitleFontSize": 11
+  },
+  "data": {
+    "url": "https://api.worldbank.org/v2/country/kor;ind;jpn;gbr/indicator/SP.DYN.TFRT.IN?format=json&per_page=1000",
+    "format": {
+      "type": "json",
+      "property": "[1]"
+    }
+  },
+  "params": [
+    {
+      "name": "Country_choice",
+      "value": "KOR",
+      "bind": {
+        "input": "select",
+        "options": [
+          "KOR",
+          "IND",
+          "JPN",
+          "GBR",
+          "ALL"
+        ],
+        "labels": [
+          "South Korea",
+          "India",
+          "Japan",
+          "United Kingdom",
+          "Compare all four"
+        ],
+        "name": "Country: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "isValid(datum.value) && isFinite(datum.value)"
+    },
+    {
+      "calculate": "utcParse(datum.date, '%Y')",
+      "as": "YearDate"
+    },
+    {
+      "calculate": "datum.countryiso3code === 'KOR' ? 'South Korea' : datum.countryiso3code === 'IND' ? 'India' : datum.countryiso3code === 'JPN' ? 'Japan' : 'United Kingdom'",
+      "as": "Country"
+    },
+    {
+      "filter": "Country_choice === 'ALL' || datum.countryiso3code === Country_choice"
+    }
+  ],
+  "mark": {
+    "type": "line",
+    "strokeWidth": 2.5
+  },
+  "encoding": {
+    "x": {
+      "field": "YearDate",
+      "type": "temporal",
+      "title": "Year",
+      "scale": {
+        "type": "utc"
+      },
+      "axis": {
+        "format": "%Y",
+        "tickCount": 7,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Births per woman",
+      "scale": {
+        "zero": true
+      },
+      "axis": {
+        "format": ".1f"
+      }
+    },
+    "color": {
+      "field": "Country",
+      "type": "nominal",
+      "title": null,
+      "scale": {
+        "domain": [
+          "South Korea",
+          "India",
+          "Japan",
+          "United Kingdom"
+        ],
+        "range": [
+          "#087f8c",
+          "#ba5a16",
+          "#3566a3",
+          "#80519c"
+        ]
+      },
+      "legend": {
+        "orient": "bottom",
+        "columns": 2,
+        "labelFontSize": 11
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Country",
+        "type": "nominal"
+      },
+      {
+        "field": "date",
+        "type": "ordinal",
+        "title": "Year"
+      },
+      {
+        "field": "value",
+        "type": "quantitative",
+        "title": "Births per woman",
+        "format": ".3f"
+      }
+    ]
+  },
+  "config": {
+    "font": "Arial",
+    "background": "white",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "titlePadding": 12,
+      "gridColor": "#e8edf0",
+      "domainColor": "#b8c4cc"
+    }
+  }
+}

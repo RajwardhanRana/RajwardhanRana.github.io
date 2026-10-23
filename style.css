@@ -82,3 +82,8 @@ summary { cursor: pointer; font-weight: 600; }
 
 /* Week 3 continues the portfolio section spacing. */
 #week3 { border-top: 1px solid #ddd; padding-top: 12px; }
+
+/* Week 4: separate the live API exercise and keep its control readable. */
+#week4 { border-top: 1px solid #ddd; padding-top: 12px; }
+#Location7 .vega-bind { margin-top: 12px; font-size: 14px; }
+#Location7 select { font: inherit; padding: 6px 10px; max-width: 100%; }
